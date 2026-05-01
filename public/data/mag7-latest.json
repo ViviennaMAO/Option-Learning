@@ -1,0 +1,77 @@
+{
+  "updated": "2026-05-01T16:47:57.906Z",
+  "prices": {
+    "AAPL": {
+      "symbol": "AAPL",
+      "price": 282.71,
+      "prevClose": 270.17,
+      "change": 12.539999999999964,
+      "changePct": 4.641522004663717,
+      "time": "2026-05-01T16:48:01.000Z"
+    },
+    "MSFT": {
+      "symbol": "MSFT",
+      "price": 413.19,
+      "prevClose": 424.46,
+      "change": -11.269999999999982,
+      "changePct": -2.6551382933609724,
+      "time": "2026-05-01T16:48:00.000Z"
+    },
+    "GOOGL": {
+      "symbol": "GOOGL",
+      "price": 384.27,
+      "prevClose": 349.94,
+      "change": 34.329999999999984,
+      "changePct": 9.810253186260496,
+      "time": "2026-05-01T16:48:01.000Z"
+    },
+    "AMZN": {
+      "symbol": "AMZN",
+      "price": 268.51,
+      "prevClose": 263.04,
+      "change": 5.46999999999997,
+      "changePct": 2.079531630170305,
+      "time": "2026-05-01T16:48:03.000Z"
+    },
+    "META": {
+      "symbol": "META",
+      "price": 611.825,
+      "prevClose": 669.12,
+      "change": -57.29499999999996,
+      "changePct": -8.562739120038252,
+      "time": "2026-05-01T16:48:02.000Z"
+    },
+    "NVDA": {
+      "symbol": "NVDA",
+      "price": 198.9,
+      "prevClose": 209.25,
+      "change": -10.349999999999994,
+      "changePct": -4.946236559139782,
+      "time": "2026-05-01T16:48:03.000Z"
+    },
+    "TSLA": {
+      "symbol": "TSLA",
+      "price": 393.98,
+      "prevClose": 372.8,
+      "change": 21.180000000000007,
+      "changePct": 5.681330472103006,
+      "time": "2026-05-01T16:48:04.000Z"
+    },
+    "SPY": {
+      "symbol": "SPY",
+      "price": 721.85,
+      "prevClose": 711.58,
+      "change": 10.269999999999982,
+      "changePct": 1.4432670957587315,
+      "time": "2026-05-01T16:48:03.000Z"
+    },
+    "QQQ": {
+      "symbol": "QQQ",
+      "price": 673.768,
+      "prevClose": 661.57,
+      "change": 12.197999999999979,
+      "changePct": 1.8437958190365311,
+      "time": "2026-05-01T16:48:04.000Z"
+    }
+  }
+}
