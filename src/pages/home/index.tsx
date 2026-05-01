@@ -7,7 +7,7 @@ import { loadProgress, completionRate, dueReviews } from '../../utils/progress'
 import './index.scss'
 
 export default function Home() {
-  const [openParts, setOpenParts] = useState<Set<number>>(new Set([1]))
+  const [openParts, setOpenParts] = useState<Record<number, boolean>>({ 1: true })
   const [completion, setCompletion] = useState(0)
   const [streak, setStreak] = useState(0)
   const [due, setDue] = useState(0)
@@ -20,10 +20,7 @@ export default function Home() {
   }, [])
 
   function togglePart(num: number) {
-    const next = new Set(openParts)
-    if (next.has(num)) next.delete(num)
-    else next.add(num)
-    setOpenParts(next)
+    setOpenParts({ ...openParts, [num]: !openParts[num] })
   }
 
   function go(url: string) {
@@ -59,9 +56,9 @@ export default function Home() {
                 <Text className='part-title'>第 {p.num} 部分 · {p.title}</Text>
                 <Text className='part-desc'>{p.desc} · {p.range}</Text>
               </View>
-              <Text className='part-chev'>{openParts.has(p.num) ? '▾' : '▸'}</Text>
+              <Text className='part-chev'>{openParts[p.num] ? '▾' : '▸'}</Text>
             </View>
-            {openParts.has(p.num) ? (
+            {openParts[p.num] ? (
               <View className='ch-list'>
                 {p.chapters.map(c => (
                   <View

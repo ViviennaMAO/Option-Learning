@@ -1,15 +1,25 @@
 {
-  "miniprogramRoot": "dist/",
-  "projectname": "options-strategy-superbox",
-  "description": "期权策略互动学习",
-  "appid": "wx0000000000000000",
-  "setting": {
-    "urlCheck": false,
-    "es6": false,
-    "enhance": false,
-    "postcss": false,
-    "minified": false,
-    "useCompilerPlugins": false
-  },
-  "compileType": "miniprogram"
+	"miniprogramRoot": "dist/",
+	"projectname": "Option%20learning",
+	"description": "期权策略互动学习",
+	"appid": "wx0000000000000000",
+	"setting": {
+		"urlCheck": false,
+		"es6": false,
+		"enhance": false,
+		"postcss": false,
+		"minified": false,
+		"useCompilerPlugins": false,
+		"newFeature": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"uploadWithSourceMap": true,
+		"uglifyFileName": true,
+		"remoteDebugLogEnable": true,
+		"prefetch": false
+	},
+	"compileType": "miniprogram",
+	"LuffaToolsappid": "mpvr44zosv8bkocl",
+	"scripts": {},
+	"condition": {}
 }
