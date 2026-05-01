@@ -1,0 +1,61 @@
+.live-data {
+  margin: 16px 24px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+
+  .live-head {
+    margin-bottom: 16px;
+  }
+  .live-title {
+    color: var(--text);
+    font-size: 28px;
+    font-weight: 600;
+  }
+  .live-subtitle {
+    display: block;
+    color: var(--text-dim);
+    font-size: 22px;
+    margin-top: 4px;
+  }
+  .live-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .live-tile {
+    flex: 1 1 calc(50% - 6px);
+    min-width: 0;
+    padding: 16px;
+    background: var(--bg-elev);
+    border-radius: 12px;
+  }
+  .live-label {
+    display: block;
+    color: var(--text-dim);
+    font-size: 22px;
+  }
+  .live-value {
+    display: block;
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'SF Mono', monospace;
+    margin-top: 4px;
+  }
+  .live-change {
+    display: block;
+    font-size: 22px;
+    margin-top: 2px;
+  }
+  .live-tile.up .live-change { color: var(--red); } // 中文金融习惯：涨红
+  .live-tile.down .live-change { color: var(--green); }
+  .live-hint {
+    display: block;
+    color: var(--text-dim);
+    font-size: 20px;
+    margin-top: 6px;
+    line-height: 1.4;
+  }
+}

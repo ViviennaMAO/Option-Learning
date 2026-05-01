@@ -1,0 +1,63 @@
+.reveal-mask {
+  position: fixed; left: 0; right: 0; top: 0; bottom: 0;
+  background: rgba(0,0,0,0.7);
+  z-index: 110;
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px 32px;
+}
+
+.reveal-card {
+  background: var(--bg-card);
+  border-radius: 24px;
+  padding: 36px 28px;
+  width: 100%;
+  border: 1px solid var(--accent);
+
+  .reveal-tag {
+    display: block; color: var(--accent); font-size: 24px;
+  }
+  .reveal-title {
+    display: block; color: var(--text); font-size: 32px; font-weight: 600;
+    margin-top: 8px;
+  }
+  .reveal-delta-box {
+    margin: 24px 0; padding: 24px;
+    background: linear-gradient(135deg, rgba(110,168,255,0.15), rgba(255,181,71,0.15));
+    border-radius: 16px;
+    text-align: center;
+  }
+  .reveal-delta {
+    color: var(--accent);
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'SF Mono', monospace;
+  }
+  .reveal-explain {
+    display: block; color: var(--text);
+    font-size: 27px; line-height: 1.7;
+  }
+  .reveal-twist {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255,181,71,0.1);
+    border-left: 3px solid var(--accent);
+    border-radius: 8px;
+  }
+  .reveal-twist-label {
+    display: block; color: var(--accent); font-size: 24px;
+    margin-bottom: 8px;
+  }
+  .reveal-twist-text {
+    display: block; color: var(--text); font-size: 26px; line-height: 1.6;
+  }
+  .reveal-cta {
+    margin-top: 28px;
+    padding: 20px;
+    background: var(--primary);
+    border-radius: 100px;
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 600;
+  }
+}

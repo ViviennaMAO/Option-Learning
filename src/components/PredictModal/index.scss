@@ -1,0 +1,73 @@
+.predict-mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  display: flex;
+  align-items: flex-end;
+}
+
+.predict-card {
+  background: var(--bg-card);
+  border-radius: 32px 32px 0 0;
+  padding: 36px 32px 56px;
+  width: 100%;
+  border-top: 2px solid var(--accent);
+
+  .predict-tag {
+    display: block;
+    color: var(--accent);
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  .predict-context {
+    display: block;
+    color: var(--text-dim);
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .predict-question {
+    display: block;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+
+  .predict-opt {
+    background: var(--bg-elev);
+    padding: 22px 24px;
+    border-radius: 16px;
+    margin-bottom: 12px;
+    color: var(--text);
+    font-size: 28px;
+    border: 2px solid transparent;
+    transition: all 0.2s;
+
+    &.active { border-color: var(--primary); }
+    &.correct { border-color: var(--green); background: rgba(74, 222, 128, 0.15); }
+    &.wrong { border-color: var(--red); background: rgba(248, 113, 113, 0.15); }
+  }
+
+  .predict-feedback {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 28px;
+    color: var(--text);
+  }
+
+  .predict-tip {
+    display: block;
+    text-align: center;
+    margin-top: 16px;
+    color: var(--text-dim);
+    font-size: 24px;
+  }
+}

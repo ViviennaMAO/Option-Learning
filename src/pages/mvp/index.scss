@@ -1,0 +1,38 @@
+.mvp-page {
+  height: 100vh;
+  background: var(--bg);
+  padding: 24px;
+}
+.mvp-hero {
+  padding: 24px 0 32px;
+  .mvp-title {
+    color: var(--accent); font-size: 36px; font-weight: 700; display: block;
+  }
+  .mvp-sub {
+    color: var(--text-dim); font-size: 24px; display: block; margin-top: 8px;
+  }
+}
+.mvp-card {
+  margin-bottom: 16px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+
+  .mvp-num {
+    color: var(--text-dim); font-size: 22px;
+  }
+  .mvp-emoji-title {
+    display: flex; align-items: center; gap: 12px; margin: 8px 0;
+    .e { font-size: 36px; }
+    .t { color: var(--text); font-size: 28px; font-weight: 600; }
+  }
+  .mvp-hook {
+    color: var(--text); font-size: 26px; line-height: 1.6; margin-top: 8px;
+    display: block;
+  }
+  .mvp-cta {
+    color: var(--primary); font-size: 22px; margin-top: 12px;
+    display: block;
+  }
+}

@@ -1,0 +1,25 @@
+page {
+  background: #0a0e1a;
+  color: #e8edf5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif;
+  font-size: 28px;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+// global tokens
+:root {
+  --bg: #0a0e1a;
+  --bg-card: #141b2d;
+  --bg-elev: #1c2540;
+  --primary: #6ea8ff;
+  --accent: #ffb547;
+  --green: #4ade80;
+  --red: #f87171;
+  --text: #e8edf5;
+  --text-dim: #8d9ab3;
+  --border: #2a3252;
+}

@@ -1,0 +1,32 @@
+name: Daily Market Data Sync
+
+on:
+  schedule:
+    # 每天 02:00 UTC = 北京时间 10:00（美股盘后）
+    - cron: '0 2 * * *'
+  workflow_dispatch:
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch market data
+        run: node scripts/fetch-data.mjs
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain public/data)" ]; then
+            git add public/data
+            git commit -m "chore(data): daily sync $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "No data change."
+          fi

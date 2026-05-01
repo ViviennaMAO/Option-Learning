@@ -1,0 +1,22 @@
+.slider-row {
+  margin-bottom: 24px;
+
+  .slider-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 8px;
+
+    .slider-label {
+      color: var(--text-dim);
+      font-size: 26px;
+    }
+
+    .slider-value {
+      color: var(--primary);
+      font-size: 30px;
+      font-weight: 600;
+      font-family: 'SF Mono', Menlo, monospace;
+    }
+  }
+}

@@ -1,0 +1,196 @@
+.home {
+  height: 100vh;
+  background: var(--bg);
+}
+
+.hero {
+  padding: 48px 32px 32px;
+  background: linear-gradient(135deg, #0a0e1a 0%, #1c2540 100%);
+  .hero-title {
+    display: block;
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--text);
+    line-height: 1.3;
+  }
+  .hero-sub {
+    display: block;
+    margin-top: 12px;
+    color: var(--text-dim);
+    font-size: 24px;
+  }
+}
+
+.progress-card {
+  margin: 16px 24px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(110,168,255,0.15), rgba(255,181,71,0.10));
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+
+  .progress-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+  .progress-num {
+    font-size: 56px;
+    font-weight: 700;
+    color: var(--primary);
+    font-family: 'SF Mono', monospace;
+  }
+  .progress-label {
+    display: block; color: var(--text); font-size: 28px; font-weight: 600;
+  }
+  .progress-meta {
+    display: block; color: var(--text-dim); font-size: 22px; margin-top: 4px;
+  }
+}
+
+.section {
+  margin: 32px 24px;
+
+  .section-tag {
+    display: block;
+    color: var(--text);
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+}
+
+.part-block {
+  margin-bottom: 12px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.part-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 24px;
+  .part-title {
+    display: block; color: var(--text); font-size: 28px; font-weight: 600;
+  }
+  .part-desc {
+    display: block; color: var(--text-dim); font-size: 22px; margin-top: 4px;
+  }
+  .part-chev {
+    color: var(--text-dim); font-size: 32px;
+  }
+}
+
+.ch-list {
+  padding: 0 16px 16px;
+}
+
+.ch-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 20px 16px;
+  border-radius: 12px;
+  background: var(--bg-elev);
+  margin-bottom: 8px;
+
+  .ch-emoji {
+    font-size: 36px;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+  .ch-body {
+    flex: 1;
+  }
+  .ch-title {
+    display: block; color: var(--text); font-size: 26px; font-weight: 600;
+  }
+  .ch-brief {
+    display: block; color: var(--text-dim); font-size: 22px; margin-top: 4px;
+  }
+  .ch-hook {
+    display: block; color: var(--accent); font-size: 22px; margin-top: 8px;
+    line-height: 1.5;
+  }
+  .ch-arrow {
+    color: var(--text-dim); font-size: 32px; padding-top: 8px;
+  }
+
+  &.tier-mvp {
+    border-left: 3px solid var(--accent);
+  }
+}
+
+.feature-card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border: 1px solid var(--border);
+
+  &.accent {
+    border-color: var(--accent);
+    background: linear-gradient(135deg, var(--bg-card), rgba(255,181,71,0.1));
+  }
+
+  .feature-emoji {
+    font-size: 48px;
+  }
+  .feature-body { flex: 1; }
+  .feature-title {
+    display: block; color: var(--text); font-size: 28px; font-weight: 600;
+  }
+  .feature-desc {
+    display: block; color: var(--text-dim); font-size: 22px; margin-top: 4px;
+  }
+  .feature-arrow {
+    color: var(--text-dim); font-size: 36px;
+  }
+}
+
+.news-card {
+  display: flex;
+  gap: 16px;
+  padding: 20px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  margin-bottom: 8px;
+
+  .news-rank {
+    width: 48px; height: 48px;
+    background: var(--bg-elev);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--accent);
+    font-size: 26px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .news-body { flex: 1; }
+  .news-emoji { font-size: 24px; }
+  .news-title {
+    display: block; color: var(--text); font-size: 26px; font-weight: 600; margin-top: 4px;
+  }
+  .news-summary {
+    display: block; color: var(--text-dim); font-size: 22px; margin-top: 4px; line-height: 1.5;
+  }
+}
+
+.news-more {
+  text-align: center;
+  padding: 20px;
+  color: var(--primary);
+  font-size: 24px;
+}
+
+.footer {
+  padding: 40px 32px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 22px;
+}

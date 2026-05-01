@@ -1,0 +1,28 @@
+@import '../_chapter-shared.scss';
+
+.order-card {
+  margin: 16px 24px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border-left: 4px solid var(--primary);
+
+  .order-num {
+    color: var(--accent); font-size: 28px; font-weight: 700;
+  }
+  .order-title {
+    color: var(--text); font-size: 28px; font-weight: 600; margin: 8px 0;
+    display: block;
+  }
+  .order-eg {
+    color: var(--text-dim); font-size: 24px; margin-bottom: 8px;
+    display: block;
+  }
+  .order-greeks {
+    display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;
+    .gk {
+      padding: 4px 12px; background: var(--bg-elev);
+      border-radius: 100px; color: var(--text); font-size: 22px;
+    }
+  }
+}

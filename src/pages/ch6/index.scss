@@ -1,0 +1,19 @@
+@import '../_chapter-shared.scss';
+
+.combo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 16px 24px;
+}
+.combo-cell {
+  flex: 1 1 calc(50% - 6px);
+  padding: 16px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  &.active { border-color: var(--accent); background: var(--bg-elev); }
+  .combo-name { color: var(--text); font-size: 24px; font-weight: 600; }
+  .combo-tag { color: var(--text-dim); font-size: 22px; display: block; margin-top: 4px; }
+  .combo-view { color: var(--accent); font-size: 22px; display: block; margin-top: 6px; }
+}

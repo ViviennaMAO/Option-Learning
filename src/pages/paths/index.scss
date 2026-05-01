@@ -1,0 +1,65 @@
+.paths-page {
+  height: 100vh;
+  background: var(--bg);
+  padding-bottom: 40px;
+}
+
+.path-group {
+  margin: 24px;
+  .group-head {
+    color: var(--text); font-size: 30px; font-weight: 600; display: block;
+  }
+  .group-desc {
+    color: var(--text-dim); font-size: 22px; margin-top: 4px; display: block;
+  }
+}
+
+.path-card {
+  margin-top: 12px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+  border-left: 4px solid var(--primary);
+
+  &.lvl1 { border-color: #4ade80; }
+  &.lvl2 { border-color: #6ea8ff; }
+  &.lvl3 { border-color: #ffb547; }
+  &.lvl4 { border-color: #fb7185; }
+  &.lvl5 { border-color: #ef4444; }
+
+  .path-head {
+    display: flex; align-items: center; gap: 16px;
+  }
+  .path-emoji { font-size: 40px; }
+  .path-title { color: var(--text); font-size: 28px; font-weight: 600; flex: 1; }
+  .path-tag { color: var(--text-dim); font-size: 22px; display: block; margin-top: 4px; }
+  .path-hook {
+    margin-top: 12px;
+    padding: 12px;
+    background: rgba(255,181,71,0.1);
+    border-left: 2px solid var(--accent);
+    color: var(--text);
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .path-outcome {
+    color: var(--green); font-size: 24px; margin-top: 12px; display: block;
+  }
+  .path-nodes {
+    margin-top: 16px; padding-top: 16px;
+    border-top: 1px solid var(--border);
+  }
+  .node {
+    display: flex; gap: 12px; padding: 8px 0;
+    .node-num {
+      width: 36px; height: 36px;
+      background: var(--bg-elev); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      color: var(--accent); font-weight: 700; font-size: 22px;
+      flex-shrink: 0;
+    }
+    .node-body { flex: 1; }
+    .node-role { color: var(--accent); font-size: 22px; }
+    .node-why { color: var(--text-dim); font-size: 22px; line-height: 1.5; display: block; margin-top: 2px; }
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+.swc/
+dist/
+.DS_Store
+*.log
+npm-debug.log*
+.cache/
+.taro-cache/
+.idea/
+.vscode/
+*.local
+.env
+.env.local

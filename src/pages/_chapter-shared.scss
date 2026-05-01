@@ -1,0 +1,203 @@
+.ch-page {
+  height: 100vh;
+  background: var(--bg);
+}
+
+.page-header {
+  padding: 32px 28px 16px;
+  background: linear-gradient(135deg, #0a0e1a, #1c2540);
+}
+.page-title {
+  display: block;
+  color: var(--text);
+  font-size: 38px;
+  font-weight: 700;
+}
+.page-meta {
+  display: block;
+  color: var(--text-dim);
+  font-size: 22px;
+  margin-top: 6px;
+}
+
+.panel {
+  margin: 16px 24px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+
+  .panel-tag {
+    display: block;
+    color: var(--text-dim);
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+}
+
+.output {
+  margin: 16px 24px;
+  padding: 24px;
+  background: linear-gradient(135deg, rgba(110,168,255,0.15), rgba(255,181,71,0.08));
+  border: 1px solid var(--primary);
+  border-radius: 16px;
+  transition: all 0.6s;
+
+  &.flash {
+    background: linear-gradient(135deg, rgba(255,181,71,0.3), rgba(74,222,128,0.15));
+  }
+
+  .output-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .output-label {
+    display: block;
+    color: var(--text-dim);
+    font-size: 22px;
+  }
+  .output-big {
+    display: block;
+    color: var(--text);
+    font-size: 44px;
+    font-weight: 700;
+    font-family: 'SF Mono', monospace;
+    margin-top: 4px;
+    &.up { color: var(--green); }
+    &.down { color: var(--red); }
+  }
+  .output-mid {
+    color: var(--text);
+    font-size: 32px;
+    font-weight: 600;
+    font-family: 'SF Mono', monospace;
+  }
+  .output-hint {
+    display: block;
+    color: var(--text-dim);
+    font-size: 22px;
+    margin-top: 12px;
+    line-height: 1.5;
+  }
+}
+
+.edu-card {
+  margin: 16px 24px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+
+  .edu-tag {
+    display: block;
+    color: var(--accent);
+    font-size: 24px;
+    margin-bottom: 12px;
+  }
+  .edu-text {
+    display: block;
+    color: var(--text);
+    font-size: 26px;
+    line-height: 1.7;
+  }
+
+  &.edu-twist {
+    border-left: 3px solid var(--accent);
+    background: linear-gradient(90deg, rgba(255,181,71,0.1), var(--bg-card));
+  }
+}
+
+.scenario-grid {
+  display: flex;
+  gap: 12px;
+  margin: 16px 24px;
+}
+.scenario {
+  flex: 1;
+  padding: 20px 16px;
+  background: var(--bg-card);
+  border-radius: 12px;
+  text-align: center;
+
+  &.up { border-top: 3px solid var(--green); }
+  &.flat { border-top: 3px solid var(--text-dim); }
+  &.down { border-top: 3px solid var(--red); }
+
+  .sc-title {
+    display: block; color: var(--text-dim); font-size: 22px;
+  }
+  .sc-price {
+    display: block; color: var(--text); font-size: 26px; font-weight: 600;
+    font-family: 'SF Mono', monospace; margin: 4px 0;
+  }
+  .sc-pnl {
+    display: block; font-size: 30px; font-weight: 700; font-family: 'SF Mono', monospace;
+    &.green { color: var(--green); }
+    &.red { color: var(--red); }
+  }
+}
+
+.further-cta {
+  margin: 24px 24px;
+  padding: 24px;
+  background: var(--primary);
+  border-radius: 100px;
+  text-align: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.strategy-tabs {
+  display: flex;
+  gap: 8px;
+  padding: 0 24px;
+  margin: 16px 0;
+  flex-wrap: wrap;
+
+  .tab {
+    padding: 12px 20px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 100px;
+    color: var(--text-dim);
+    font-size: 24px;
+
+    &.active {
+      background: var(--bg-elev);
+      color: var(--primary);
+      border-color: var(--primary);
+    }
+  }
+}
+
+.risk-table {
+  margin: 16px 24px;
+  padding: 0;
+  background: var(--bg-card);
+  border-radius: 16px;
+  overflow: hidden;
+
+  .row {
+    display: flex;
+    padding: 18px 20px;
+    border-bottom: 1px solid var(--border);
+
+    &:last-child { border-bottom: none; }
+    &.head {
+      background: var(--bg-elev);
+      .cell { color: var(--text-dim); font-weight: 600; }
+    }
+    .cell {
+      flex: 1;
+      color: var(--text);
+      font-size: 24px;
+    }
+    .cell-num {
+      font-family: 'SF Mono', monospace;
+      &.green { color: var(--green); }
+      &.red { color: var(--red); }
+    }
+  }
+}

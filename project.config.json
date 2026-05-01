@@ -1,0 +1,15 @@
+{
+  "miniprogramRoot": "dist/",
+  "projectname": "options-strategy-superbox",
+  "description": "期权策略互动学习",
+  "appid": "wx0000000000000000",
+  "setting": {
+    "urlCheck": false,
+    "es6": false,
+    "enhance": false,
+    "postcss": false,
+    "minified": false,
+    "useCompilerPlugins": false
+  },
+  "compileType": "miniprogram"
+}

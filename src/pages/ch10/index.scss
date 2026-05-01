@@ -1,0 +1,43 @@
+@import '../_chapter-shared.scss';
+
+.term-curve {
+  margin: 16px 24px;
+  padding: 24px;
+  background: var(--bg-card);
+  border-radius: 16px;
+}
+.term-bars {
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+  height: 200px;
+  margin-top: 16px;
+}
+.term-bar {
+  flex: 1;
+  background: linear-gradient(180deg, var(--accent), var(--primary));
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 6px;
+
+  &.high { background: linear-gradient(180deg, var(--red), #b91c1c); }
+}
+.term-bar-val {
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+}
+.term-labels {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+.term-label {
+  flex: 1;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 22px;
+}
